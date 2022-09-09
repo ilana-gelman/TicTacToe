@@ -1,0 +1,50 @@
+ilana315061945
+315061945
+
+Mrs.Clever strategy:
+Mrs.Clever goes over the board row by row
+and search for empty cell, with  this strategy if the other player
+didnt put his murk right after hers, after some turns she can have a sequence and win
+the probability that the random player will put his mark exactly after hers is not so high,
+in that case Mrs.Clever will be able to continue to put murks one after another and win .
+in case that the cell is not empty,she will go to another one by rows,
+and in the end the probability that she will succeed in making sequence  without the random player blocks her is high.
+
+Mr.Whatever implementation:
+Mr.Whatever chooses randomly coordinates(for the row and col).
+if the chosen place in the board is not empty , he continues to choose random coordinates until empty cell is found
+and the putMark function places his mark.
+
+Mr.Snartypamts strategy:
+Mr.Snartypamts goes over the board column by column starting from the second column
+and search for empty cell, with this strategy he will block mrs.Clever step and will have a sequence faster
+than her
+
+
+500 games between Mr.Whatever and Mrs.Clever:
+Mr.Whatever wins: 21
+MrS.Clever wins: 479
+draws: 0
+
+500 games between Mr.Whatever and Mr.Snartypamts:
+Mr.Whatever wins: 23
+Mr.Snartypamts wins: 477
+draws: 0
+
+500 games between Mr.Snartypamts and Mrs.Clever:
+Mr.Snartypamts wins: 500
+MrS.Clever wins: 0
+draws: 0
+
+10000 games between Mr.Whatever and Mrs.Whatever:
+player1 wins: 4933
+player2 wins: 5019
+Draws: 48
+
+
+
+
+
+
+
+
